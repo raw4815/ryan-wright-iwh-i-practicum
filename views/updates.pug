@@ -1,0 +1,15 @@
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    h1 Add a New Book
+    form(method='POST' action='/update-cobj')
+      label Name:
+      input(type='text' name='name')
+      label Author:
+      input(type='text' name='author')
+      label Genre:
+      input(type='text' name='genre')
+      button(type='submit') Add Book
+    a(href='/') Return to the homepage
