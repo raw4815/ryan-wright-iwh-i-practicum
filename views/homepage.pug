@@ -1,0 +1,17 @@
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    h1 My Books
+    table(border='1')
+      tr
+        th Name
+        th Author
+        th Genre
+      each book in data
+        tr
+          td= book.properties.name
+          td= book.properties.author
+          td= book.properties.genre
+    a(href='/update-cobj') Add to this table
